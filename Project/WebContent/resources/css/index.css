@@ -1,0 +1,116 @@
+/* body {
+    background-color: #c0ebd7;
+} */
+/* 新闻 */
+.news-events a {
+    color: black !important;
+}
+.news-section a {
+    /* background-color: #ccc; */
+    border-radius: 1px solid #ccc;
+}
+.news-hd h2 strong a {
+    /* color: #5d1889; */
+    color: #21a675 !important;
+}
+.news-hd .more {
+    padding: 30px 0 10px 0;
+    color: #21a675;
+}
+.news-hd>.row .more>a {
+    color: #21a675;
+}
+.news-events ul, .news-events li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.news-events a:hover {
+    text-decoration: none;
+    color: #057748 !important;
+}
+.news-item {
+    height: 150px;
+}
+.news-item .media {
+    height: 150px;
+}
+.news-item img {
+    width: 180px;
+    height: 140px;
+    transition: all 0.6s;
+}
+.news-item img:hover {
+    transform: scale(1.1);
+}
+.media-body {
+    vertical-align: middle;
+    width: 500px;
+    text-align: justify;
+}
+.media-body h4 {
+    /* color: #5d1889; */
+    color: #21a675;
+    font-weight: 600;
+    overflow: hidden;
+}
+.media-body h6 {
+    color: #999;
+    font-size: 12px;
+    font-weight: 400;
+}
+.media-body p {
+    /* color: #777; */
+    font-weight: 400;
+    overflow: hidden;
+}
+.events-list ul li p {
+    display: inline-block;
+    width: 85%;
+}
+.events-list>ul>li {
+    height: 35px;
+}
+.events-list>ul>li>a span {
+    color: #21a675;
+}
+.events-list>ul>li>a>span {
+    color: #999;
+}
+.events-bd {
+    min-height: 190px;
+}
+.events-bd {
+	min-height: 190px;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.5);
+}
+.grid-3 {
+    padding: 10px 0px;
+    background-color: #f2f2f2
+}
+.title-eng {
+    color: #aaa;
+    text-align: center;
+    font-weight: bold;
+}
+.title {
+    text-align: center;
+}
+.line {
+    width: 30px;
+    height: 2px;
+    background-color: #aaa;
+    display: inline-block;
+    vertical-align: middle;
+}
+.title-text {
+    color: #21a675;
+    margin: 0px 20px;
+    line-height: 40px
+}
+.img-list img {
+    transition: all 0.6s;
+}
+.img-list img:hover {
+    transform: scale(1.1);
+}

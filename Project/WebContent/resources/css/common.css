@@ -1,0 +1,124 @@
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.container-fluid {
+    padding: 0 100px;
+}
+.content {
+    min-height: 100%;
+}
+.main {
+    padding-bottom: 150px;
+}
+.share span{
+    color: #057748;
+}
+/* 轮播图用 */
+.banner {
+    height: 400px;
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header {
+    height: 100px;
+    background-color: #0c8918;
+}
+header img {
+    width: 480px;
+    height: auto;
+}
+/* 搜索框 */
+.search {
+    padding: 30px 0;
+}
+/* 二维码 */
+.share {
+    position: fixed;
+    width: 50px;
+    height: 100px;
+    bottom: 40px;
+    right: 50px;
+    z-index: 10008;
+}
+.share span {
+    font-size: 25px;
+}
+#topback {
+    width: 60px;
+    height: 60px;
+    background: #21a675 url(/Project/resources/images/top.png) no-repeat center center;
+    opacity: 1;
+}
+#weixin{
+    width: 60px;
+    height: 50px;
+    color: white;
+    background-color: #21a675;
+}
+#weixin span {
+    color: white;
+}
+/* 登录 */
+.login {
+    text-align: center;
+    padding: 30px 0;
+}
+.login button {
+    background-color: #0c8918;
+    color: white;
+}
+/* 导航 */
+#text-white {
+    color:white;
+}
+ul.nav li {
+    font-size: 16px;
+}
+/* 下拉菜单变为悬浮激发 */
+.nav>li:hover .dropdown-menu {
+    display: block;
+}
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.navbar-default {
+    background-color: #0c8918;
+    font-family: 微软雅黑;
+    border-color: #0c8918;
+}
+.navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-nav>li>a:hover {
+    background-color: white;
+    color: #0c8918;
+}
+.navbar-default .navbar-nav>li.active>a, .navbar-default .navbar-nav>li.active>a:hover {
+    background-color: white;
+    color: #0c8918;
+}
+nav .active>a:hover {
+    background-color: #057748 ;
+}
+footer {
+    height: 150px;
+    margin-top: -150px;
+    background-color: #0c8918;
+    /* background-image: url(../images/fd-bg.jpg); */
+    color: white;
+    font-family: 微软雅黑;
+}
+footer .left {
+    text-align: left;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 40px 0;
+}
+.links {
+    display: flex;
+    padding: 40px 0;
+}

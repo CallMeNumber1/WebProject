@@ -1,0 +1,171 @@
+.news-banner {
+    margin-bottom: 70px;
+}
+.news-banner .ban {
+    background-image: url(../images/news.jpg);
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left top;
+}
+.m-cur {
+    background-color: #f1f1f1;
+    height: 55px;
+    position: relative;
+}
+.wp {
+    width: 1200px;
+    margin: 0 auto;
+}
+.m-cur .tit {
+    float: left;
+    width: 250px;
+    height: 140px;
+    line-height: 140px;
+    margin-top: -85px;
+    background: url(../images/zz-green.png) repeat left top;
+    text-align: center;
+}
+.m-cur .tit span {
+    display: inline-block;
+    color: #fff;
+    font-size: 28px;
+    padding-right: 30px;
+    /* background: url(../images/y-arrow1.png) no-repeat right center; */
+}
+.m-cur .cur-l {
+    float: left;
+    line-height: 55px;
+    color: #000;
+    font-size: 14px;
+    margin-left: 39px;
+}
+.news-main {
+    overflow: hidden;
+}
+/* 新闻主体 */
+ul.ul-news {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.ul-news li:first-child .inner {
+    border-top: none;
+}
+.ul-news li .inner {
+    overflow: hidden;
+    padding: 34px 0;
+    border-top: 1px solid #dfdfdf;
+}
+.ul-news .time {
+    float: left;
+    width: 88px;
+    margin-right: 40px;
+}
+.ul-news .time strong {
+    display: block;
+    font-size: 40px;
+    font-family: "Arial";
+    color: #fff;
+    background-color: #bfbfbf;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+}
+.ul-news .time span {
+    border: 1px solid #bfbfbf;
+    border-top: none;
+    display: block;
+    font-size: 14px;
+    color: #8a8a8a;
+    height: 29px;
+    line-height: 29px;
+    text-align: center;
+}
+.ul-news .txt {
+    overflow: hidden;
+    padding-top: 4px;
+}
+.ul-news .txt h4 {
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-bottom: 10px;
+}
+.ul-news .txt h4 a{
+    color: #444;
+    text-decoration: none;
+}
+.ul-news .txt p {
+    font-size: 14px;
+    line-height: 22px;
+    color: #585858;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    height: 44px;
+}
+.ul-news li:hover {
+    background-color: #f1f1f1;
+}
+.ul-news li:hover a {
+    color: #21a675;
+}
+.ul-news li:hover .time span {
+    color: #21a675;
+}
+.ul-news li:hover .time strong {
+    color: white;
+    background-color: #21a675;
+}
+
+/* 新闻详情页 */
+.con-row2 {
+    overflow: hidden;
+}
+.con-row2 .col-l {
+    width: 1199x;
+    float: left;
+}
+.m-text-b h1 {
+    font-size: 24px;
+    text-align: left;
+    padding-left: 26px;
+    line-height: 41px;
+    background: url(../images/bor-green.jpg) no-repeat left 8px;
+    margin-bottom: 5px;
+}
+.m-text .info {
+    overflow: hidden;
+    font-size: 14px;
+    color: #353535;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #ccc;
+}
+.m-text .info span {
+    letter-spacing: 0.5px;
+    margin-right: 18px;
+}
+.m-text .txt {
+    font-size: 14px;
+    line-height: 2.43;
+    color: #555;
+    margin-top: 38px;
+    padding-bottom: 95px;
+}
+.m-text .txt p{
+    font-size: 16px;
+    line-height: 2em;
+    text-indent: 2em;
+    margin-bottom: 15px;
+    word-break: break-all;
+    text-align: justify;
+}
+.l {
+    float: left;
+}
+.r {
+    float: right;
+}

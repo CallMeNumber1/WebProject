@@ -1,0 +1,125 @@
+.grid_2 {
+    padding: 40px 0px;
+    background-color: #fff;
+}
+.list {
+    display: flex;
+}
+.list .left {
+    width: 250px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+.list .left-title {
+    height: 70px;
+    line-height: 70px;
+    padding-left: 30px;
+    color: #fff;
+    background-color: #21a675;
+    margin: 0px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.list .left ul {
+    display: block;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+.list .left ul li {
+    display: block;
+    border-bottom: 1px #eee solid;
+    border-left: 1px #eee solid;
+    border-right: 1px #eee solid;
+    padding: 20px 10px 20px 30px;
+    color: #333;
+    font-size: 16px;
+    list-style: none;
+    cursor: pointer;
+}
+.list .right {
+    flex: 1;
+    margin: 0px 30px;
+    flex-direction: column;
+}
+.list .right .right-box {
+    display: block;
+    overflow: hidden;
+    letter-spacing: 1px;
+}
+.list .right .right-title {
+    border-bottom: 1px #eee solid;
+    overflow: hidden;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+.list .right .right-title h3 {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 0px;
+    line-height: 50px;
+}
+.list-box {
+    margin: 10px 0px;
+    overflow: hidden;
+}
+.list-box ul {
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.list-box ul li {
+    display: flex;
+    padding: 15px 0px;
+    overflow: hidden;
+    border-bottom: 1px #eee dashed;
+}
+.teacher-img {
+    width: 100px;
+    height: 120px;
+    display: block;
+    margin: 0px auto;
+}
+.teacher-name {
+    text-align: center;
+    margin-top: 8px;
+}
+.teacher-box {
+    flex: 1;
+    overflow: hidden;
+    margin: 0px 20px;
+}
+.teacher-box dl {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 14px;
+    line-height: 25px;
+}
+.teacher-box dl dt {
+    width: 80px;
+    float: left;
+}
+.teacher-box dl dd {
+    margin-left: 80px;
+}
+.teacher-link {
+    clear: both;
+    display: block !important;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 15px;
+    font-size: 14px !important;
+    margin: 10px 0px 10px 40px !important;
+    background-color: #21a675;
+    color: #fff !important;
+}
+.leftOn {
+    color: #21a675 !important;
+    font-weight: bold;
+}

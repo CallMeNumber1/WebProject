@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- 可选的 Bootstrap 主题文件（一般不用引入） 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="/Project/resources/css/common.css">
+    <link rel="stylesheet" href="/Project/resources/css/newslist.css">
+    <link rel="stylesheet" href="/Project/resources/css/research.css">
+    <title>东北林业大学软件工程专业</title>
+</head>
+<body>
+<div class="content">
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-md-5 ">
+                <img src="/Project/resources/images/header-logo.png" alt="">
+            </div>
+            <div class="col-md-4">
+                <div class="input-group search">
+                    <input type="text" class="form-control" placeholder="请输入您想了解的信息">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="login">
+                    <button class="btn btn-default" data-toggle="modal" data-target="#login_content">
+                        <span class="glyphicon glyphicon-user"></span>
+                        登录
+                    </button>
+                </div>
+            </div>
+<!--modal-->
+            <div id="login_content" class="modal fade" tabindex="-1">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button class="close" data-dismiss="modal">
+                                <span>&times</span>
+                            </button>
+                            <h4 class="modal-title">登录</h4>
+                        </div>
+                        <div class="modal-body">
+                            <form action="/Project/LoginServlet" method="POST" class="form-group">
+                                <div class="form-group">
+                                    <label for="">用户名</label>
+                                    <input class="form-control" type="text" name="username">
+                                </div>  
+                                <div class="form-group">
+                                    <label for="">密码</label>
+                                    <input class="form-control" type="password" name="password">
+                                </div>
+                                <!-- <div class="input-group">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-user"></span></span>
+                                        <input type="text" class="form-control" placeholder="Username" aria-describedby="sizing-addon2">
+                                </div> -->
+                                <br>
+                                <div class="text-right">
+                                    <button class="btn btn-primary" type="submit">登录</button>
+                                    <button class="btn btn-danger" data-dismiss="modal">取消</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<!---->
+        </div>
+    </header>
+<!-- 导航条 -->
+<div class="main">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">          
+          <div class="collapse navbar-collapse" style="padding:0 25px;">
+            <ul class="nav navbar-nav">
+              <li><a href="/Project/IndexServlet">首页</a></li>
+              <li><a href="/Project/html/introduction.html">专业介绍</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >
+                    师资队伍 <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/Project/html/teacher-pro.html">教授</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="/Project/html/teacher-subpro.html">副教授</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li><a href="/Project/html/teacher-tutor.html">讲师</a></li>
+                </ul>
+              </li>
+              <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" >
+                        实验室 <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="/Project/html/lab-925.html">925移动开发实验室</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="/Project/html/lab-923.html">923互联网实验室</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="/Project/html/lab-901.html">901教学实验室</a></li>
+                    </ul>
+                </li>
+                <li><a href="/Project/html/jobguide.html">就业指南</a></li>
+                <li><a href="/Project/html/course.html">课程设置</a></li>
+                <li class="active"><a href="/Project/html/research.html">科学研究</a></li> 
+                <li><a href="/Project/NewsListServlet">新闻公告</a></li> 
+            </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+      </nav>
+<!---->
+<!-- 二维码 -->
+    <div class="share">
+        <ul class="nav nav-stacked">
+            <li><a id="weixin" data-toggle="popover" data-placement="left"><span class="glyphicon glyphicon-home"></span></a></li>
+            <!-- <li><a id="email" data-toggle="popover" data-placement="left"><span class="glyphicon glyphicon-envelope"></span></a></li> -->
+        </ul>        
+    </div>
+    <div class="news-banner">
+        <div class="ban">
+        </div>
+        <div class="m-cur">
+            <div class="wp">
+                <div class="tit">
+                    <span>科学研究</span>
+                </div>
+                <div class="cur-l">
+                    当前位置:
+                    <a>科学研究</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="news-main">
+        <div class="m-news">
+            <ul class="ul-news">
+                <li>
+                    <div class="wp">
+                        <div class="inner">
+                            <div class="time">
+                                <strong>06</strong>
+                                <span>2018-12</span>
+                            </div>
+                            <div class="txt">
+                                <h4><a href="#" target="_blank" title="信息科学中心王立威教授课题组在天池医疗人工智能大赛中夺冠">信息科学中心王立威教授课题组在天池医疗人工智能大赛中夺冠</a></h4>
+                                <p>日前，由阿里云计算有限公司、英特尔（中国）有限公司、零氪科技（北京）有限公司主办的天池医疗人工智能大赛落下帷幕。经过初赛、复赛和决赛的角逐，东北林业大学软件专业信息科学技术学院信息科学中心、机器感知与智能教育部重点实验室王立威教授指导的硕士研究生王东、胡志强、罗天歌、杨泽和博士研究生李傲雪最终夺冠。</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="wp">
+                        <div class="inner">
+                            <div class="time">
+                                <strong>06</strong>
+                                <span>2018-12</span>
+                            </div>
+                            <div class="txt">
+                                <h4><a href="#" target="_blank" title="高能效计算与应用中心孙广宇副教授课题组二论文获国际高性能计算机体系结构研讨会录用">高能效计算与应用中心孙广宇副教授课题组二论文获国际高性能计算机体系结构研讨会录用</a></h4>
+                                <p>近日，东北林业大学软件专业信息科学技术学院、高能效计算与应用中心孙广宇副教授、谢源教授（兼职）与丛京生教授带领的的高能效体系结构课题组在存储与计算融合和内存数据库体系架构两方面的研究工作分别取得重要突破。相关成果以《PM3：存储计算融合架构的功耗建模及管理优化》（PM3: power modeling and power management for processing-in-memory）和《RC-NVM：支持内存数据库中对称行列访问的存储架构设计》（RC-NVM: enabling symmetric row and column memory accesses for in-memory databases）为题的两篇论文，被电气电子工程师学会主办的国际高性能计算机体系结构研讨会（IEEE International Symposium on High-Performance Computer Architecture, HPCA 2018）录用。</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="wp">
+                        <div class="inner">
+                            <div class="time">
+                                <strong>06</strong>
+                                <span>2018-12</span>
+                            </div>
+                            <div class="txt">
+                                <h4><a href="#" target="_blank" title="软件研究所博士研究生陆璇获2017年度微软学者奖学金资助">软件研究所博士研究生陆璇获2017年度微软学者奖学金资助</a></h4>
+                                <p>日前，由微软亚洲研究院主持的2017年度微软学者奖学金评选揭晓。东北林业大学软件专业信息科学技术学院软件研究所、高可信软件技术教育部重点实验室博士研究生陆璇榜上有名，她也是本年度唯一的女性获奖者。</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="wp">
+                        <div class="inner">
+                            <div class="time">
+                                <strong>06</strong>
+                                <span>2018-12</span>
+                            </div>
+                            <div class="txt">
+                                <h4><a href="#" target="_blank" title="信息科学中心迟惠生教授、何新贵院士入选中国人工智能学会首批会士">信息科学中心迟惠生教授、何新贵院士入选中国人工智能学会首批会士</a></h4>
+                                <p>一、协议书相关1、签订三方《就业协议书》时应注意什么问题？</p>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div> <!--main-->
+</div> <!--content-->
+    <footer class="container-fluid">
+        <div class="col-md-1 logo">
+            <br><br>
+            <img src="/Project/resources/images/footer-logo.png" alt="">
+        </div>
+        <div class="col-md-8 left">
+            <p>
+				地址：黑龙江省哈尔滨市香坊区和兴路26号    邮编： 150040     电话：0451-82190397
+            <br>
+            Copyright © 2018 版权所有：东北林业大学软件工程专业
+            <br>技术支持：HC</p>
+        </div>
+        <div class="col-md-3 right">
+            <div class="links">
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+        $("#weixin").popover({
+            trigger: 'hover',
+            html: true,
+            content: "<img src='/Project/resources/images/weixin.png'>"
+        });
+    </script>
+</body>
+</html>

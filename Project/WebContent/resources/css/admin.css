@@ -1,0 +1,27 @@
+.news-banner {
+    margin-bottom: 10px;
+}
+.add-news .wp {
+    text-align: center;;
+}
+.add-news .btn {
+    font-size: 18px;
+    background-color: #21a675;
+    border-color: #21a675;
+}
+.add-news .btn:hover, .add-news .btn:active {
+    background-color: #f1f1f1;
+    color: #21a675;
+}
+.txt h4 {
+    display: inline-block;
+    width: 460px;
+}
+.ul-news li:hover a.btn {
+    color: white;
+}
+.txt .edit {
+    width: 600px;
+    display: inline-block;
+    text-align: right;
+}

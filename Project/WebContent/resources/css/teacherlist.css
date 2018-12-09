@@ -1,0 +1,72 @@
+.list {
+    padding-left: 130px;
+    font-family: 微软雅黑;
+    margin: 10px auto;
+}
+.list>.row {
+    background-color: #c0ebd7;
+}
+.list .nav {
+    padding: 100px 0;
+}
+.list .nav li{
+    background-color: #21a675;
+    color: white; 
+    text-align: center;
+}
+.list .nav li>a {
+    background-color: #21a675;
+    color: white; 
+}
+.list .nav li>a:hover {
+    background-color: white;
+    color: #21a675;
+}
+.list .nav li.active>a {
+    background-color: white;
+    color: #21a675;
+}
+.list img {
+    width: 180px;
+    height: 230px;
+    /* margin: 0 auto; 图片居中了 */
+    display: block;
+}
+.tab-pane .row {
+    margin-bottom: 20px;
+}
+.item {
+    text-align: center;
+    padding: 0 80px;
+}
+.item .detail {
+    width: 180px;
+    height: 50px;
+    background-color: white;
+    margin: 0 auto;
+}
+.item .detail .tname {
+    font-size: 18px;
+}
+.item .detail .title {
+    background-color: #177cb0;
+    color: white;
+    font-weight: 400;
+    padding: 0 5px;
+    /* border: 0; */
+}
+.list .info {
+    padding-top: 20px;
+    font-family: 微软雅黑;
+}
+.info p {
+    text-indent: 2em;
+    font-size: 16px;
+    line-height: 24px;
+}
+.info span {
+    font-size: 14px;
+}
+.info .row {
+    height: 290px;
+}
