@@ -145,6 +145,7 @@ NYU shanghai：index.html的精彩推荐和新闻公告栏目
   - 字段：`id,title,content,inserttime`
     - 其中id为自增长字段，无需手动插入
     - inserttime为`timestamp`类型，在插入数据时自动插入，无需手动插入
+  - 在Web工程的META-INF下要有一个context.xml配置文件
 
 #### 遗留问题
 
